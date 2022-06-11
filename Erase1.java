@@ -1,51 +1,32 @@
 
 public class Erase1 {
 
-	public static String erase1 (String chaine) {
+	public static String erase2 (String chaine) {
 
 		char [] tab = chaine.toCharArray();
 	    String res = "";
-	    
-	    if (tab.length < 1) {
-	    	return "";
-	    } else if (tab.length == 1) {
-	    	if (tab[0] == ' ') {
-	    		return "";
-	    	} else {
-	    		res += tab [0];
-	    		return res;
-	    	}
-	    }
-	     
-	    if (tab[0] == ' ' && tab [1] == ' ') {
-	    	res += " ";
-	    } else if (tab [0] != ' ') {
-	    	res += tab [0];
-	    } else {
-	    	res += "";
-	    }
-	    
+	    String var = "";
+	    int cpt = 0;
 	    int i;
 	    
-	    for (i=1; i<tab.length - 1; i++) {
-	    	if (tab [i] == ' ' && (tab [i+1] == ' ' || tab [i-1] == ' ')) {
-	    		res += " ";
-	    	} else if (tab [i] != ' ') {
-	    		res += tab [i];
+	    for (i=0; i<tab.length; i++) {
+	    	if (tab [i] == ' ') {
+	    		var += " ";
+	    		cpt += 1;
 	    	} else {
-	    		res += "";
+	    		if (cpt > 1)
+	    			res += var;
+	    		cpt = 0;
+	    		var = "";
+	    		res += tab [i];
 	    	}
 	    }
-	    
-	    if (tab[i] == ' ' && tab [i-1] == ' ') {
-	    	res += " ";
-	    } else if (tab [i] != ' ') {
-	    	res += tab [i];
-	    } else {
-	    	res += "";
-	    }
+
+    	if (cpt > 1)
+    		res += var;
 	    
 	    return res;
+	    
 	}
 	
 }
