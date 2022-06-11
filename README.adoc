@@ -43,7 +43,7 @@ endif::[]
 
 === De la solution...
 
-* LAST NAME : Martinet
+* LAST NAME : MARTINET
 * First name : Leila
 * TD group : 
 - [ ] 1
