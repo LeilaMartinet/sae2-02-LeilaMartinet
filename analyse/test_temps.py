@@ -1,13 +1,7 @@
-from time import time
 import time
-import re
-
-#Pas de modification
 
 def erase(cc):
-    # supprime espace entre deux (non lettre)
-    # utilisation de lookbehinds/lookaheads pour éviter les problèmes de chevauchement
-    return re.sub(r'(?<! ) (?! )', '', cc)
+    pass
 
 #La première exécution prend souvent plus de temps, donc je l'exécute à blanc
 erase ("")
