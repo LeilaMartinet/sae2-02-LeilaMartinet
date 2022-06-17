@@ -153,20 +153,14 @@ WARNING: Les répertoires et fichiers existants devront être complétés et mis
 
 === Pré-requis
 
-- Java v.x.y.z
-- ...
+Pas de pré-requis particulier
 
 === Reproductibilité
 
-- Pour reproduire mon analyse :
-. Installez X
-. Lancez Y
-. ...
+Facilement reproductible
 
 === Références
 
-- link:http://xyz[Mon super outil XYZ]
-- ...
 
 == Généralités, notation de la SAÉ et résultat du concours
 
